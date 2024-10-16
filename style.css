@@ -1,0 +1,93 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth; 
+}
+
+.header {
+    color: #2a2e31;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.container-custom {
+    padding: 30px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-section, .code-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    width: 60%;
+}
+
+.code-section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: sticky; 
+    top: 20px; 
+    align-self: flex-start;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-custom {
+    width: 48%;
+    margin-right: 2%;
+}
+
+.code-box {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    height: auto;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.project-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .form-section, .code-section {
+        width: 100%;
+    }
+
+    .btn-custom {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
